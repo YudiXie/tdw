@@ -54,7 +54,7 @@ if __name__ == "__main__":
 
 - The controller sends **commands** to the build per `communicate()` call. In the above examples, `{"$type": "terminate"}` is a command.
 - Every time the controller calls `communicate()`, the simulation advances 1 **frame**. In nearly all cases, a frame is equivalent in TDW to both a visual camera render and a physics step (the exception is the `step_physics` command, which is covered in a later tutorial). If the controller *doesn't* call `communicate()`, the simulation pauses until it does. 
-- The build receives **output data** from the build per communicate call.
+- The controller receives **output data** from the build per communicate call.
 
 
 
